@@ -82,6 +82,6 @@ public class Jogador {
     public float setDex(float Dex){
         return this.Dex=Dex;
     }
-    
+
     }
 
