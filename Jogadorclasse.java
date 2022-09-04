@@ -8,13 +8,19 @@ public class Jogadorclasse {
         
         Jogador j1 = new Jogador(1);
         
-        int d1,d2;
-       
-        int bt;
+        float d1,d2;
         
-        Scanner scan=new Scanner(System.in);
-        
+        j1.setFor(14);
+        j1.setDex(10);
+        d1=j1.causarDano();
+        System.out.printf("Jogador 1 For: %.2f\nDex: %.2f\nDano: %.2f \n\n",j1.getFor(),j1.getDex(),d1);
 
+        j1.setFor(15);
+        j1.setDex(10);
+        d2=j1.causarDano();
+        System.out.printf("Após incremento\nJogador 1 For: %.2f\nDex: %.2f\nDano: %.2f ",j1.getFor(),j1.getDex(),d2);
+
+        /* 
         while( j1.getMorto() != true)
 
         {
@@ -42,18 +48,9 @@ public class Jogadorclasse {
             }
             
             System.out.println(j1.getMorto() ? "Jogador Morreu" : "");
-
+            
 
         }
-
-        
-      
-
-
-      
-        
-
-
-
+        */
    }
 }
