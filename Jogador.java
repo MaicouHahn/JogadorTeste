@@ -5,7 +5,7 @@ import java.security.SecureRandom;
 public class Jogador {
 
     private int HP,For,Int,Dex,jog,dano;
-
+    float causarDano;
     private boolean morto=false;
 
     public Jogador(int n){
