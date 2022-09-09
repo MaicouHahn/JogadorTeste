@@ -33,7 +33,7 @@ public class Jogadorclasse {
             
             c1=j2.Curar();
             
-            System.out.printf("O jogador 2 conseguiu correr e se esconder, faze o curativo ele recuperou %.2f de HP\nHP Total agora é de %.2f",c1,c1+j2.getHP());
+            System.out.printf("O jogador 2 conseguiu correr e se esconder. Fez um curativo que recuperou %.2f de seu HP\nHP Total agora é de %.2f",c1,c1+j2.getHP());
 
             System.out.printf("\nO jogador 1 ataca novamente\n");
 
