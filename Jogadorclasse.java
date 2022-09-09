@@ -12,12 +12,9 @@ public class Jogadorclasse {
 
         j1.info();
 
-        j2.setDex(17);
-
         j2.info();
 
         d1=j1.causarDano();
-
         
         System.out.printf("O jogador 1 emboscou o jogador 2 causando %.2f de dano\n",d1);
         
@@ -38,6 +35,7 @@ public class Jogadorclasse {
             System.out.printf("\nO jogador 1 ataca novamente\n");
 
             d1=j2.Esquiva(d1);
+            
             if(j2.getChEsq()<=5){
                 System.out.printf("O jogador 2 falhou catastroficamente em esquivar e recebeu dano dobrado");
             }

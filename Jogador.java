@@ -126,9 +126,9 @@ public class Jogador {
     public float Esquiva(float dmg){
 
         if(this.Dex >= 15){
-            //int chanceEsq= new SecureRandom().nextInt(20);
+            
 
-            ChEsq = 5;
+            ChEsq = new SecureRandom().nextInt(20);;
 
             if(ChEsq==20){           
                 dmg=0;
@@ -143,7 +143,6 @@ public class Jogador {
 
         return dmg;
     }
-
     public int getChEsq(){
         return this.ChEsq;
     }
