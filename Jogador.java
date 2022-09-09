@@ -5,7 +5,8 @@ import java.security.SecureRandom;
 public class Jogador {
 
     private float HP,For,Int,Dex,jog,Rdano,Cdano,Cura;
-    private float AumD,RedD,AumC,ChEsq;
+    private float AumD,RedD,AumC;
+    private int ChEsq=0;
     
     private boolean morto=false;
 
@@ -17,7 +18,6 @@ public class Jogador {
         For=new SecureRandom().nextFloat(1,20);
         Int=new SecureRandom().nextFloat(1,20);
         Dex=new SecureRandom().nextFloat(1,20);
-        
         //System.out.printf("\nJogador %d criado\nHP: %d\nForça: %d\nInt: %d\nDestreza: %d\n",n,(HP+1),For,Int,Dex);
 
         }
@@ -123,6 +123,30 @@ public class Jogador {
         }
         return this.Cura;
      } 
-    
+    public float Esquiva(float dmg){
+
+        if(this.Dex >= 15){
+            //int chanceEsq= new SecureRandom().nextInt(20);
+
+            ChEsq = 5;
+
+            if(ChEsq==20){           
+                dmg=0;
+            }
+
+            if(ChEsq <= 5){
+
+                dmg=(dmg*2);
+            }
+
+        }
+
+        return dmg;
+    }
+
+    public int getChEsq(){
+        return this.ChEsq;
+    }
+
 }
 
